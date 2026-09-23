@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+
+# Local provenance, source paths and editorial working records
+docs/
