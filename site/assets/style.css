@@ -38,3 +38,12 @@ header nav{flex-wrap:wrap;justify-content:flex-end;gap:12px 24px}
 
 /* Compact studio portrait, preserving the face and worktable. */
 .about{grid-template-columns:minmax(220px,320px) minmax(0,680px)}.artist-portrait{max-width:320px}@media(max-width:650px){.about{grid-template-columns:1fr}}
+
+/* Shared editorial grid for Spaces and About. */
+.spaces,.about{grid-template-columns:minmax(220px,320px) minmax(0,680px);gap:6%;justify-content:center;align-items:center}
+.spaces>figure,.about>figure{width:100%;max-width:320px;margin:0}
+.spaces>figure img,.about>figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.spaces figcaption,.about figcaption{font-size:12px;margin-top:12px}
+.spaces>div,.about>div{width:100%;max-width:680px}
+.spaces p:not(.eyebrow),.about p:not(.eyebrow){font-size:17px;line-height:1.6;color:var(--muted)}
+@media(max-width:650px){.spaces,.about{grid-template-columns:1fr;gap:30px}.spaces>div,.about>div{padding-top:0}.spaces>figure,.about>figure{max-width:320px}}
