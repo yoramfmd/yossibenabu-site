@@ -29,3 +29,6 @@ header nav{flex-wrap:wrap;justify-content:flex-end;gap:12px 24px}
 @media(max-width:380px){.additional-grid,.archive-grid,.series-grid{grid-template-columns:1fr}}
 
 .review-banner{padding:9px 4%;border-bottom:1px solid var(--line);background:#e9e6e2;color:var(--muted);font-size:12px;text-align:center}
+
+/* Artist portrait beside the biography. */
+.about{grid-template-columns:minmax(240px,400px) minmax(0,680px);align-items:center;justify-content:center;gap:6%}.artist-portrait{max-width:400px;width:100%}.artist-portrait img{width:100%;height:auto}.artist-portrait figcaption{font-size:12px}@media(max-width:650px){.about{grid-template-columns:1fr;gap:30px}.artist-portrait{max-width:360px}}
