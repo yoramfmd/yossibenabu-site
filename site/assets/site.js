@@ -25,13 +25,13 @@ document.querySelectorAll('[data-space-gallery]').forEach(gallery => {
   const count = gallery.querySelector('[data-space-count]');
   const pause = gallery.querySelector('[data-space-pause]');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let index = 0, paused = motion.matches, visible = false, hovered = false, timer;
+  let index = 0, paused = motion.matches, visible = false, hovered = false, focused = false, timer;
   const updateTimer = () => {
     clearInterval(timer);
     pause.textContent = paused ? 'Play' : 'Pause';
     pause.setAttribute('aria-label', paused ? 'Start image rotation' : 'Pause image rotation');
     count.setAttribute('aria-live', paused ? 'polite' : 'off');
-    if (!paused && visible && !hovered && !document.hidden) timer = setInterval(() => show(index + 1), 6000);
+    if (!paused && visible && !hovered && !focused && !document.hidden) timer = setInterval(() => show(index + 1), 6000);
   };
   const show = next => {
     index = (next + slides.length) % slides.length;
@@ -48,9 +48,17 @@ document.querySelectorAll('[data-space-gallery]').forEach(gallery => {
   pause.addEventListener('click', () => { paused = !paused; updateTimer(); });
   gallery.addEventListener('mouseenter', () => { hovered = true; updateTimer(); });
   gallery.addEventListener('mouseleave', () => { hovered = false; updateTimer(); });
-  gallery.addEventListener('focusin', () => { paused = true; updateTimer(); });
+  gallery.addEventListener('focusin', () => { focused = true; paused = true; updateTimer(); });
+  gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget); updateTimer(); });
   document.addEventListener('visibilitychange', updateTimer);
   motion.addEventListener('change', () => { paused = motion.matches; updateTimer(); });
   new IntersectionObserver(entries => { visible = entries[0].isIntersecting; updateTimer(); }, { threshold: 0.25 }).observe(gallery);
   updateTimer();
 });
+
+// Artwork links open the existing studio form with context; submission stays native.
+const artworkField = document.querySelector('#contact-artwork');
+if (artworkField) {
+  const artwork = new URLSearchParams(window.location.search).get('artwork');
+  if (artwork) artworkField.value = artwork.slice(0, 200);
+}
