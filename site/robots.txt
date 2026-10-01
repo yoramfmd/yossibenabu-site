@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Review pages retain noindex,nofollow in HTML.
-# Host-root robots governs a GitHub Pages project-path deployment.
+Sitemap: https://yossibenabu.com/sitemap.xml

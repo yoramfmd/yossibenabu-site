@@ -1,35 +1,37 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://yossibenabu.com/</loc></url>
-<url><loc>https://yossibenabu.com/previous/absence/</loc></url>
-<url><loc>https://yossibenabu.com/previous/canopies/</loc></url>
-<url><loc>https://yossibenabu.com/previous/eclipse/</loc></url>
-<url><loc>https://yossibenabu.com/previous/elements/</loc></url>
-<url><loc>https://yossibenabu.com/previous/gradients/</loc></url>
-<url><loc>https://yossibenabu.com/previous/</loc></url>
-<url><loc>https://yossibenabu.com/previous/new/</loc></url>
-<url><loc>https://yossibenabu.com/previous/patterns/</loc></url>
-<url><loc>https://yossibenabu.com/previous/petite/</loc></url>
-<url><loc>https://yossibenabu.com/previous/radiant/</loc></url>
-<url><loc>https://yossibenabu.com/previous/swirls/</loc></url>
-<url><loc>https://yossibenabu.com/previous/uneven/</loc></url>
-<url><loc>https://yossibenabu.com/work/aurora/</loc></url>
-<url><loc>https://yossibenabu.com/work/collected-views/</loc></url>
-<url><loc>https://yossibenabu.com/work/divergence-blue-cream/</loc></url>
-<url><loc>https://yossibenabu.com/work/divergence-gold-blue/</loc></url>
-<url><loc>https://yossibenabu.com/work/divergence-red-teal/</loc></url>
-<url><loc>https://yossibenabu.com/work/echoing-silence/</loc></url>
-<url><loc>https://yossibenabu.com/work/behind-the-house/</loc></url>
-<url><loc>https://yossibenabu.com/work/flowers-fields-room/</loc></url>
-<url><loc>https://yossibenabu.com/work/folded-frequencies-amber-field/</loc></url>
-<url><loc>https://yossibenabu.com/work/folded-frequencies-blue-pulse/</loc></url>
-<url><loc>https://yossibenabu.com/work/folded-frequencies-shadow-pulse/</loc></url>
-<url><loc>https://yossibenabu.com/work/indigo-weave/</loc></url>
-<url><loc>https://yossibenabu.com/work/quiet-transformation/</loc></url>
-<url><loc>https://yossibenabu.com/work/rising-heat/</loc></url>
-<url><loc>https://yossibenabu.com/work/shared-horizon/</loc></url>
-<url><loc>https://yossibenabu.com/work/the-remaining-light/</loc></url>
-<url><loc>https://yossibenabu.com/work/threshold-of-light/</loc></url>
-<url><loc>https://yossibenabu.com/work/urban-earth/</loc></url>
-<url><loc>https://yossibenabu.com/work/urban-grove/</loc></url>
+  <url><loc>https://yossibenabu.com/artist-statement/</loc></url>
+  <url><loc>https://yossibenabu.com/biography/</loc></url>
+  <url><loc>https://yossibenabu.com/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/absence/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/canopies/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/eclipse/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/elements/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/gradients/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/patterns/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/petite/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/radiant/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/swirls/</loc></url>
+  <url><loc>https://yossibenabu.com/previous/uneven/</loc></url>
+  <url><loc>https://yossibenabu.com/work/aurora/</loc></url>
+  <url><loc>https://yossibenabu.com/work/behind-the-house/</loc></url>
+  <url><loc>https://yossibenabu.com/work/collected-views/</loc></url>
+  <url><loc>https://yossibenabu.com/work/divergence-blue-cream/</loc></url>
+  <url><loc>https://yossibenabu.com/work/divergence-gold-blue/</loc></url>
+  <url><loc>https://yossibenabu.com/work/divergence-red-teal/</loc></url>
+  <url><loc>https://yossibenabu.com/work/echoing-silence/</loc></url>
+  <url><loc>https://yossibenabu.com/work/flowers-field/</loc></url>
+  <url><loc>https://yossibenabu.com/work/flowers-fields-room/</loc></url>
+  <url><loc>https://yossibenabu.com/work/folded-frequencies-amber-field/</loc></url>
+  <url><loc>https://yossibenabu.com/work/folded-frequencies-blue-pulse/</loc></url>
+  <url><loc>https://yossibenabu.com/work/folded-frequencies-shadow-pulse/</loc></url>
+  <url><loc>https://yossibenabu.com/work/indigo-weave/</loc></url>
+  <url><loc>https://yossibenabu.com/work/quiet-transformation/</loc></url>
+  <url><loc>https://yossibenabu.com/work/rising-heat/</loc></url>
+  <url><loc>https://yossibenabu.com/work/shared-horizon/</loc></url>
+  <url><loc>https://yossibenabu.com/work/the-remaining-light/</loc></url>
+  <url><loc>https://yossibenabu.com/work/threshold-of-light/</loc></url>
+  <url><loc>https://yossibenabu.com/work/urban-earth/</loc></url>
+  <url><loc>https://yossibenabu.com/work/urban-grove/</loc></url>
 </urlset>

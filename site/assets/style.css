@@ -90,3 +90,9 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .dialog-close:focus-visible,.document-trigger:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .dialog-body{padding:28px 36px 16px;overflow-y:auto;overscroll-behavior:contain;max-height:calc(100dvh - 185px);font-size:17px;line-height:1.8}.dialog-body p{max-width:none;margin-bottom:24px}
 @media(max-width:650px){.document-dialog{width:calc(100% - 24px);max-height:calc(100dvh - 24px)}.dialog-shell{max-height:calc(100dvh - 24px)}.dialog-heading{padding:22px 20px 18px;gap:12px}.dialog-heading h2{font-size:28px}.dialog-close{padding:8px 10px}.dialog-body{padding:22px 20px 8px;font-size:16px;max-height:calc(100dvh - 150px)}}
+
+/* Full-text artist documents also work as ordinary crawlable pages. */
+.document-page{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+.document-page h1{font-size:clamp(36px,6vw,64px);margin:20px 0 36px}
+.reading-content{font-size:18px;line-height:1.8}.reading-content p{max-width:none;margin-bottom:28px}
+@media(max-width:650px){.document-page{padding:32px 20px 56px}.reading-content{font-size:16px}}

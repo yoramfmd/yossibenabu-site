@@ -68,7 +68,10 @@ document.querySelectorAll('[data-open-document]').forEach(trigger => {
   const dialog = document.getElementById(trigger.dataset.openDocument);
   if (!dialog) return;
   let previousFocus, scrollPosition, previousOverflow;
-  trigger.addEventListener('click', () => {
+  trigger.addEventListener('click', event => {
+    if (typeof dialog.showModal !== 'function') return;
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
     if (dialog.open) return;
     previousFocus = document.activeElement;
     scrollPosition = window.scrollY;
