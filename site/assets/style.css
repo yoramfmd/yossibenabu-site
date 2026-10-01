@@ -76,3 +76,17 @@ button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 @media(max-width:650px){.curated-row{grid-template-columns:1fr;gap:40px}}
 /* The rotating hero can inherit all available original/detail view controls. */
 .view-controls{flex-wrap:wrap}
+
+/* Artist documents: readable, keyboard-accessible modal windows. */
+.artist-documents{display:flex;flex-wrap:wrap;gap:16px 30px;margin-top:28px}
+.document-trigger{font:inherit;font-size:15px;font-weight:600;color:inherit;background:none;border:0;border-bottom:1px solid currentColor;padding:9px 0;min-height:44px;cursor:pointer}
+.document-trigger:hover{color:var(--accent)}
+.document-dialog{width:min(760px,calc(100% - 40px));max-height:calc(100dvh - 48px);padding:0;border:1px solid var(--line);background:var(--paper);color:var(--ink);overflow:hidden;box-shadow:0 20px 80px #0003}
+.document-dialog::backdrop{background:rgb(32 30 29 / 58%)}
+.dialog-shell{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.dialog-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:30px 36px 24px;border-bottom:1px solid var(--line);flex-shrink:0}
+.dialog-heading .eyebrow{font-size:12px;margin-bottom:12px}.dialog-heading h2{font-size:36px;margin:0}.dialog-heading h2:focus{outline:none}
+.dialog-close{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:transparent;color:var(--ink);min-height:44px;padding:8px 14px;cursor:pointer;white-space:nowrap}.dialog-close span{font-size:20px;margin-left:8px}.dialog-close:hover{border-color:var(--ink)}
+.dialog-close:focus-visible,.document-trigger:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.dialog-body{padding:28px 36px 16px;overflow-y:auto;overscroll-behavior:contain;max-height:calc(100dvh - 185px);font-size:17px;line-height:1.8}.dialog-body p{max-width:none;margin-bottom:24px}
+@media(max-width:650px){.document-dialog{width:calc(100% - 24px);max-height:calc(100dvh - 24px)}.dialog-shell{max-height:calc(100dvh - 24px)}.dialog-heading{padding:22px 20px 18px;gap:12px}.dialog-heading h2{font-size:28px}.dialog-close{padding:8px 10px}.dialog-body{padding:22px 20px 8px;font-size:16px;max-height:calc(100dvh - 150px)}}

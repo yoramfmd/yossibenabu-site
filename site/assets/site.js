@@ -62,3 +62,27 @@ if (artworkField) {
   const artwork = new URLSearchParams(window.location.search).get('artwork');
   if (artwork) artworkField.value = artwork.slice(0, 200);
 }
+
+// Native dialogs provide focus containment and inert background content.
+document.querySelectorAll('[data-open-document]').forEach(trigger => {
+  const dialog = document.getElementById(trigger.dataset.openDocument);
+  if (!dialog) return;
+  let previousFocus, scrollPosition, previousOverflow;
+  trigger.addEventListener('click', () => {
+    if (dialog.open) return;
+    previousFocus = document.activeElement;
+    scrollPosition = window.scrollY;
+    previousOverflow = document.body.style.overflow;
+    dialog.showModal();
+    document.body.style.overflow = 'hidden';
+    dialog.querySelector('.dialog-body').scrollTop = 0;
+    dialog.querySelector('[data-document-title]').focus({preventScroll: true});
+  });
+  dialog.querySelector('[data-close-document]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('close', () => {
+    document.body.style.overflow = previousOverflow;
+    previousFocus?.focus({preventScroll: true});
+    window.scrollTo({top: scrollPosition, behavior: 'instant'});
+  });
+  // Escape uses the native cancel/close lifecycle, including focus restoration.
+});
